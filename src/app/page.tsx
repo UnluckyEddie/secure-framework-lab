@@ -1,8 +1,8 @@
-import Link from "next/link";
-import { DashboardLayout } from "@/components/DashboardLayout";
-import { Card } from "@/components/Card";
-import { getAppName } from "@/lib/env";
-import { getSession } from "@/lib/session";
+import Link from 'next/link';
+import { DashboardLayout } from '@/components/DashboardLayout';
+import { Card } from '@/components/Card';
+import { getAppName } from '@/lib/env';
+import { getSession } from '@/lib/session';
 
 export default async function HomePage() {
   const session = await getSession();
@@ -97,7 +97,9 @@ export default async function HomePage() {
       </div>
 
       <div className="rounded-xl border border-amber-200 bg-amber-50 p-6">
-        <h2 className="font-semibold text-amber-900">Objetivo del laboratorio</h2>
+        <h2 className="font-semibold text-amber-900">
+          Objetivo del laboratorio
+        </h2>
         <p className="mt-2 text-sm text-amber-800">
           Esta aplicación demuestra en vivo cómo implementar mecanismos de
           seguridad que ofrece un framework moderno como Next.js: middleware,
